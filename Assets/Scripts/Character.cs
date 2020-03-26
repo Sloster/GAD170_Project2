@@ -41,8 +41,17 @@ public class Character : MonoBehaviour
 
     public void InitialStats()
     {
-        // TODO - First, you can
-        Debug.LogWarning("InitialStats called, needs to distribute points into stats. This should be able to be ported from previous brief work");
+        level = 1;
+
+        xp = 0;
+
+        rhythm = Random.Range(1, availablePoints);
+        availablePoints -= rhythm;
+
+        style = Random.Range(1, availablePoints);
+        availablePoints -= style;
+
+        luck = availablePoints;
     }
 
     public void AssignName(CharacterName characterName)

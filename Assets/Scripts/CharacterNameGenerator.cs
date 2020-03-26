@@ -38,12 +38,12 @@ public class CharacterNameGenerator : ScriptableObject
             string descriptor = descriptors[Random.Range(0, descriptors.Count)];
 
             //TODO - filling this with empty names so the rest of our code is safe to run without need for many null checks
-            CharacterName CharName = new CharacterName(string.Empty, string.Empty, string.Empty, string.Empty);
-
+            CharacterName CharName = new CharacterName(firstname, lastname, nickname, descriptor);
+            
             names[i] = CharName;
         }
 
-        Debug.LogWarning("CharacterNameGenerator called, it needs to fill out the names array with unique randomly constructed character names");
+        //Debug.LogWarning("CharacterNameGenerator called, it needs to fill out the names array with unique randomly constructed character names");
 
         return names;
     }

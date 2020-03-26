@@ -31,10 +31,10 @@ public class DanceTeamInit : MonoBehaviour
 
     void InitTeams()
     {
-        teamA.SetTroupeName("dancers 1");
-        teamB.SetTroupeName("dancers 2");
+        teamA.SetTroupeName("teamA");
+        teamB.SetTroupeName("teamB");
 
-        teamA.InitaliseTeamFromNames(dancerPrefab, -1, nameGenerator.GenerateNames(dancersPerSide);
-        teamB.InitaliseTeamFromNames(dancerPrefab, 1, nameGenerator.GenerateNames(dancersPerSide);
+        teamA.InitaliseTeamFromNames(dancerPrefab, -1, nameGenerator.GenerateNames(dancersPerSide));
+        teamB.InitaliseTeamFromNames(dancerPrefab, 1, nameGenerator.GenerateNames(dancersPerSide));
     }
 }
