@@ -31,8 +31,8 @@ public class DanceTeamInit : MonoBehaviour
 
     void InitTeams()
     {
-        teamA.SetTroupeName("teamA");
-        teamB.SetTroupeName("teamB");
+        teamA.SetTroupeName("team A");
+        teamB.SetTroupeName("team B");
 
         teamA.InitaliseTeamFromNames(dancerPrefab, -1, nameGenerator.GenerateNames(dancersPerSide));
         teamB.InitaliseTeamFromNames(dancerPrefab, 1, nameGenerator.GenerateNames(dancersPerSide));
